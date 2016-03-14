@@ -36,7 +36,7 @@ Dominican Joe Coffee
 
 ### Word List
 
-![Dojo Wordlist](https://github.com/amaliebarras/restaurant-redesign/blob/master/images/dojowordlist.png | width= "400")
+![Dojo Wordlist] <img src="https://github.com/amaliebarras/restaurant-redesign/blob/master/images/dojowordlist.png?raw=true" data-canonical-src="https://github.com/amaliebarras/restaurant-redesign/blob/master/images/dojowordlist.png?raw=true" width="500" />
 
 ##Class Exercise
 
