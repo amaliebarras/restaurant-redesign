@@ -2,20 +2,34 @@
 layout: default
 ---
 
-<div>
-
-  <h1>Posts</h1>
-
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
+<div class="row">
+  <div class="column column-12">hero header wrapper
+    {% include header.html %}
+    <div class = "row">
+      <div class="column column-12">
+      hero
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="row">
+  <div class="column column-6">location1</div>
+  <div class="column column-6">location2</div>
+</div>
+<div class="row">
+  <div class="column column-6">coffee1</div>
+  <div class="column column-6">coffee2</div>
+</div>
+<div class="row">
+  <div class="story column column-6">
+    story 1
+  </div>
+   <div class="story column column-6">
+     story 2
+  </div>
+</div>
+<div class="row">
+  <div class="column column-12">partners</div>
+</div>
+
