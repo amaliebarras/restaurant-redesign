@@ -27,10 +27,9 @@ h1 {
 
 ul {
   clear: both;
-  overflow: auto;
   text-align: center;
   list-style-type: none;
-  margin: 0 auto 0 -2em; }
+  margin: .5em auto 0 -2em; }
 
 li {
   display: inline;
@@ -41,9 +40,6 @@ a {
   font-size: 1em;
   font-family: "lato";
   line-height: 1.6em; }
-
-.currentlink {
-  text-decoration: underline; }
 
 h2 {
   font-family: "museo-slab";
@@ -193,7 +189,8 @@ p {
   padding: 1em; }
 
 .hero-header-wrapper {
-  background: linear-gradient(rgba(237, 228, 212, 0.55), rgba(237, 228, 212, 0.55)), url(/images/Beans.png); }
+  background: linear-gradient(rgba(237, 228, 212, 0.55), rgba(237, 228, 212, 0.55)), url(/images/Beans.png);
+  background-size: 100%; }
 
 .navtiles {
   margin: auto; }
@@ -201,15 +198,20 @@ p {
 .navtiles a {
   text-decoration: none; }
 
+.navtiles a:active {
+  background-color: rgba(237, 228, 212, 0.55); }
+
+.navtiles a:hover {
+  text-decoration: underline; }
+
 .nav-tile {
-  padding: 1.5em .5em; }
+  padding: .5em .5em; }
 
 .anchorlinks {
   text-align: center;
   margin-bottom: 2em; }
   .anchorlinks a {
-    color: #55464b;
-    text-decoration: none; }
+    color: #55464b; }
 
 .location,
 .coffee,
@@ -217,19 +219,13 @@ p {
 .partners {
   padding: 0px 20px 60px 20px; }
 
-.location {
-  margin-top: 1em;
-  background-color: rgba(237, 228, 212, 0.55); }
-
 .textcolumn2 .column .column-6 {
   clear: both; }
 
 .coffee {
-  margin-top: 1em;
   background-color: rgba(31, 105, 118, 0.2); }
 
 .story {
-  margin-top: 1em;
   background: linear-gradient(rgba(43, 40, 35, 0.66), rgba(43, 40, 35, 0.66)), url(/images/landscape.png); }
 
 .story h3 {
@@ -237,6 +233,19 @@ p {
 
 .lighttext p {
   color: #ede4d4; }
+
+.lighttext h3 {
+  color: #f1d39b;
+  line-height: 1em;
+  font-size: 2em; }
+
+.lighttext h4 {
+  color: #1f6976;
+  font-size: 1.5em;
+  line-height: 1em; }
+
+.lighttext h5 {
+  color: #f1d39b; }
 
 .breakpoint1col1 {
   float: left;
@@ -253,6 +262,11 @@ p {
   float: left;
   margin: auto; }
 
+.menu {
+  padding: 0px 20px 60px 20px;
+  background: linear-gradient(rgba(43, 40, 35, 0.66), rgba(43, 40, 35, 0.66)), url(/images/chalkboard.jpg);
+  background-size: 100% 100%; }
+
 @media only screen and (min-width: 480px) {
   h2 {
     font-size: 2.5em;
@@ -266,11 +280,7 @@ p {
   .breakpoint1col2 {
     float: right;
     width: 47%;
-    margin: auto; }
-
-  .partnertile {
-    width: 23%;
-    margin: auto; }
+    padding-left: 2em; }
 
   .column + .column {
     margin-left: 0; } }
@@ -287,7 +297,8 @@ p {
   .breakpoint2col2 {
     float: right;
     width: 47%;
-    margin: auto; }
+    margin: auto;
+    padding-left: 2em; }
 
   .partnertile {
     width: 19%;

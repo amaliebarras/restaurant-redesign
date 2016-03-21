@@ -162,6 +162,7 @@
     ),
     /* bottom, image */
     url(/images/Beans.png);
+    background-size: 100%;
 }
 
 .navtiles {
@@ -172,8 +173,16 @@
     text-decoration: none;
 }
 
+.navtiles a:active {
+    background-color: rgba(237, 228, 212, 0.55);
+}
+
+.navtiles a:hover {
+    text-decoration: underline;
+}
+
 .nav-tile {
-    padding: 1.5em .5em;
+    padding: .5em .5em;
 }
 
 .anchorlinks {
@@ -181,20 +190,17 @@
     margin-bottom: 2em;
     a {
         color: $coffee;
-        text-decoration: none;
     }
 }
 
 .location, 
 .coffee, 
 .story,
-.partners {
+.partners{
     padding: 0px 20px 60px 20px;
 }
 
 .location {
-    margin-top: 1em;
-    background-color: rgba(237, 228, 212,0.55);
 }
 
 .textcolumn2 .column .column-6 {
@@ -202,12 +208,10 @@
 }
 
 .coffee {
-    margin-top: 1em;
     background-color: rgba(31, 105, 118,0.20);
 }
 
 .story {
-    margin-top: 1em;
     background: 
     /* top, transparent black, faked with gradient */ 
     linear-gradient(
@@ -226,22 +230,50 @@
     color: $light-neutral;
 }
 
-.breakpoint1col1 {
-        float: left;
-        width: 100%;
-        margin: auto;
-      }
+.lighttext h3 {
+    color: $bright-neutral;
+    line-height: 1em;
+    font-size: 2em;
+}
 
-      .breakpoint1col2 {
-        float: right;
-        width: 100%;
-        margin: auto;
-      }
+.lighttext h4 {
+    color: $accent-teal;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+.lighttext h5 {
+    color: $bright-neutral;
+}
+
+.breakpoint1col1 {
+    float: left;
+    width: 100%;
+    margin: auto;
+}
+
+.breakpoint1col2 {
+    float: right;
+    width: 100%;
+    margin: auto;
+}
 
 .partnertile {
     width: 40%;
     float: left;
     margin: auto;
+}
+.menu {
+    padding: 0px 20px 60px 20px;
+     background: 
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(43, 40, 35, 0.66), 
+      rgba(43, 40, 35, 0.66)
+    ),
+    /* bottom, image */
+    url(/images/chalkboard.jpg);
+    background-size: 100% 100%;
 }
 
 @media only screen and (min-width: 480px) {
@@ -261,13 +293,8 @@
       .breakpoint1col2 {
         float: right;
         width: 47%;
-        margin: auto;
+        padding-left: 2em;
       }
-
-      .partnertile {
-        width: 23%;
-        margin: auto;
-    }
   
     .column + .column {
         margin-left: 0;
@@ -291,6 +318,7 @@
     float: right;
     width: 47%;
     margin: auto;
+    padding-left: 2em;
     }
 
     .partnertile {

@@ -1,22 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <!--This include tag adds /_includes/head.html to every page that has layout: default in the front matter -->
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dominican Joe | Site Title</title>
+  <script src="https://use.typekit.net/xmr7uwq.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
+  <link rel="stylesheet"  type="text/css" href="/css/main.css">
+</head>
 
----
-layout: default
----
+  
+  <body>
 
-<div class="row">
+      <div class="wrapper">
+        <!--Any content underneath the front matter in a page that has layout: default will be inserted here-->
+        <div class="row">
   <div class="column column-12 hero-header-wrapper">
-    {% include header.html %}
+    <header class="site-header">
+	<div class = "row"> 	
+	 	<div class = "sitetitle column column-12">
+	        <h1>dominican joe</h1>        	
+	    </div>
+	</div>
+	<div class = "row">
+	    <div class = "navtiles column column-12">
+	      <ul>
+	        	<a href = "index.html">
+	        		<li class = "currentlink nav-tile">ABOUT</li>
+	        	</a>
+	        	<a href = "/menu.html">
+	        		<li class = "nav-tile">MENU</li>
+	        	</a>
+	        	<a href = "#">
+	        		<li class = "nav-tile">SHOP</li>
+	        	</a>
+	        	<a href = "#">
+	        		<li class = "nav-tile">CONTACT
+	        		</li>
+	        	</a>
+	        </ul>
+	    </div>
+	</div>
+</header>
+
+    <div class = "row">
+      <div class="column column-12">
+      </div>
+    </div>
   </div>
 </div>
 
+<div class="menu row lighttext">
+	<h3>menu</h3>
+		<div class = "drinks row ">
+			<div class="breakpoint1col1 column column-6">
+			  	<h4>Hot</h4>
+			  	<h5>COFFEE</h5>
+			  	<p>
+				  	<b>organic dominican coffee</b>
+				  	<br>light roast
+				  	<br>dark roast
+				  	<br>decaf
+				  	<br><br>
+					<b>cafe ole</b>
+					<br>our house dominican coffee with steamed milk
+			  	</p>
+			  	<h5>ESPRESSO</h5>
+			  	<p>
+					<b>espresso shots</b>
+					<br><br>
+					<b>cafe latte</b>
+					<br>our house dominican coffee with steamed milk<br><br>
+					<b>cortadito</b>
+					<br>short and strong - espresso shots with steamed evaporated milk<br><br>
+					<b>americano</b>
+					<br>espresso shots diluted with water
+					<br><br>
+					<b>chaipuccino</b>
+					<br>our traditional chai latte spiked with espresso shots<br><br>
+			  	</p>
+			  	<h5>SPECIALTIES</h5>
+			  	<p>
+				  	<b>flan latte</b>
+					<br>a dojo exclosive - blend of caramel, vanilla, and cinnamon, served latte-style with a bit of evaporated milk<br><br>
+					<b>apple cider</b><br><br>
+					<b>hot chocolate</b>
+			  	</p>
+			  	<h5>TEA</h5>
+			  	<p>
+				  	varying selection from <a href = "http://www.teaembassy.com/">tea embassy </a>
+			  	</p>
+			</div>
+		    <div class="breakpoint1col2 column column-6">
+			    <h4>Cold</h4>
+			    <h5><b>Try any of our hot drinks on ice!</b></h5><p>Perfect for your liquid fix on a hot Austin day</p>
+			    <h5>JUICE</h5>
+			    <p>
+			    <b>limeade</b>
+			    <br>regular limeade
+			    <br>mojito <br><br>
+			    <b>orange juice</b><br>
+			    naked brand<br><br>
+			    <b>italian creme soda</b><br>sparkling water and creme with italian syrup<br><br>
+			    <b>cocablanca</b><br>
+			    a dojo favorite! ice cold vanilla coke topped with creme
+		  	</div>
+		  	<div class="breakpoint1col2 column column-6">
+			  	<h4>Colder</h4>
+			  	<H5>FROJOES</H5>
+			  		<p>
+			  		<b>blended and frozen goodness!</b><br>
+			  		mocha <br>
+			  		chai <br>
+			  		creme</b>
+					<br><br>
+					</p>
+			  	<h5>SMOOTHIES</h5>
+			  	<p>
+			  		<b>fruit blended with juice, yogurt and honey</b><br>fruits: strawberry, blueberry, peach
+					<br>juices: orange, apple, cranberry, limeade<br>
+					</p>
+			</div>
+		</div>
+		<div class = "snacks row">
+			<div class="column column-12">
+			  	<h4>Snacks</h4>
+			  	<p>We source our cafe snacks from a number of fine local <a href = "index.html/#partners">partners.</a>
+			</div>
+		</div>
+</div>
+
+
 <div class="coffee row">
-	<h3>coffee</h3>
+<h3>coffee</h3>
 	<div class="breakpoint2col1 column column-6">
 	  <h4>Makarios buys coffee direct from a farming community in the Dominican Republic. Dominican Joe then buys the coffee from Makarios and serves it in our shop.
 	</h4>
 	</div>
 
-    <div class="breakpoint2col2 column column-6">
+	<div class="breakpoint2col2 column column-6">
 	    <h5>SO WHO BENEFITS?</h5>
 	    <p>
 	      <b>The kids at both Makarios and Doulos Discovery School </b>
@@ -29,6 +154,22 @@ layout: default
 	      <b>Our customers</b><br>
 	      You’re not just getting a good cup o’ Joe. You’re also helping someone in poverty take a step out of that world and into something better.
 	  	</p>
-  	</div>
+	</div>
 </div>
+
+
+      </div>
+    
+    <!--This include tag adds /_includes/footer.html to every page that has layout: default in the front matter -->
+    <footer>
+
+
+
+</footer>
+
+
+  </body>
+
+</html>
+
 

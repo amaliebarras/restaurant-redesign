@@ -30,10 +30,9 @@ h1 {
 
 ul {
 	clear: both;
-	overflow: auto;
 	text-align: center;
 	list-style-type: none;
-	margin: 0 auto 0 -2em;
+	margin: .5em auto 0 -2em;
 }
 
 li {
@@ -48,9 +47,6 @@ a {
 	line-height: 1.6em;
 }
 
-.currentlink {
-	text-decoration: underline;
-}
 
 h2 {
 	font-family: "museo-slab";
