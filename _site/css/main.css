@@ -1,3 +1,81 @@
+/*-----*\
+ Imports
+\*-----*/
+/*default grid styling*\
+\* */
+.column {
+  margin: 0;
+  padding: 0;
+  text-align: left; }
+
+.row {
+  margin-bottom: 0px; }
+
+.row:last-child {
+  margin-bottom: 0px; }
+
+.column .column {
+  border-color: #000; }
+
+h1 {
+  margin: 0;
+  font-family: "museo-slab";
+  font-size: 2.75em;
+  text-align: center;
+  color: #ede4d4;
+  background-color: #55464b; }
+
+ul {
+  clear: both;
+  overflow: auto;
+  text-align: center;
+  list-style-type: none;
+  margin: 0 auto 0 -2em; }
+
+li {
+  display: inline;
+  background-color: #ede4d4; }
+
+a {
+  text-decoration: none;
+  color: #1f6976;
+  font-size: 1em;
+  font-family: "lato"; }
+
+a:active {
+  text-decoration: underline; }
+
+h2 {
+  font-family: "museo slab";
+  font-size: 1.7em;
+  color: #1f6976;
+  text-align: center;
+  padding: 2em;
+  line-height: 1.2em; }
+
+h3 {
+  font-family: "lato";
+  color: #55464b;
+  font-size: 2em; }
+
+h4 {
+  font-family: "museo-slab";
+  font-size: 1.5em;
+  color: #1f6976; }
+
+h5 {
+  font-family: "lato";
+  font-weight: medium;
+  font-size: 1.2em;
+  color: #404742; }
+
+p {
+  font-family: "lato";
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.6em;
+  color: #404742; }
+
 /*------------------------------*\
     Grid System
 \*------------------------------*/
@@ -92,49 +170,79 @@
     float: none;
     width: auto; }
 
-  .story {
+  .textcolumn1 {
     float: left;
-    width: 50%; }
+    width: 45%;
+    margin: auto; }
+
+  .textcolumn2 {
+    float: right;
+    width: 45%;
+    margin: auto; }
 
   .column + .column {
     margin-left: 0; } }
 /*------------------------------*\
     Styling
 \*------------------------------*/
-body {
-  padding: 5px; }
+.sitetitle {
+  background-color: #55464b;
+  padding: 1em; }
 
-.column {
-  background: #eee;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  color: #777;
-  padding: 5px;
-  min-height: 30px;
-  text-align: center; }
+.hero-header-wrapper {
+  background: linear-gradient(rgba(237, 228, 212, 0.55), rgba(237, 228, 212, 0.55)), url(/images/Beans.png); }
 
-.row {
-  margin-bottom: 10px; }
+.navtiles {
+  margin: auto; }
 
-.row:last-child {
-  margin-bottom: 0; }
+.nav-tile {
+  padding: 1.5em .5em; }
 
-.column .column {
-  color: #eee;
-  background: #333;
-  border-color: #000; }
-
-.p {
-  font-size: 14px;
+.anchorlinks {
   text-align: center;
-  padding-top: 100px; }
+  margin-bottom: 2em; }
+  .anchorlinks a {
+    color: #55464b; }
+
+.location,
+.coffee,
+.story,
+.partners {
+  padding: 10px; }
+
+.location {
+  margin-top: 1em;
+  background-color: rgba(237, 228, 212, 0.55); }
+
+.textcolumn2 .column .column-6 {
+  clear: both; }
+
+.coffee {
+  margin-top: 1em;
+  background-color: rgba(31, 105, 118, 0.2); }
+
+.story {
+  margin-top: 1em;
+  padding-bottom: 4em;
+  background: linear-gradient(rgba(43, 40, 35, 0.66), rgba(43, 40, 35, 0.66)), url(/images/landscape.png); }
+
+.story h3 {
+  color: #ede4d4; }
+
+.lighttext p {
+  color: #ede4d4; }
+
+.partnertile {
+  width: 40%;
+  float: left;
+  margin: 1em; }
 
 @media only screen and (max-width: 768px) {
   .row {
     margin-bottom: 0; }
 
   .column {
-    margin-bottom: 10px; }
+    margin-bottom: 0px; }
 
   .row:last-child .column:last-child {
     margin-bottom: 0; } }

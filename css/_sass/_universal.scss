@@ -1,0 +1,89 @@
+/*default grid styling*\
+\* */
+
+.column {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.row {
+    margin-bottom: 0px;
+}
+
+.row:last-child {
+    margin-bottom: 0px;
+}
+
+.column .column {
+    border-color: #000;
+}
+
+h1 {
+	margin: 0;
+	font-family: "museo-slab";
+	font-size: 2.75em;
+	text-align: center;
+	color: $light-neutral;
+	background-color: $coffee;
+}
+
+ul {
+	clear: both;
+	overflow: auto;
+	text-align: center;
+	list-style-type: none;
+	margin: 0 auto 0 -2em;
+}
+
+li {
+	display: inline;
+	background-color: $light-neutral;
+}
+
+a {
+	text-decoration: none;
+	color: $accent-teal;
+	font-size: 1em;
+	font-family: "lato";
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+h2 {
+	font-family: "museo slab";
+	font-size: 1.7em;
+	color: $accent-teal;
+	text-align: center;
+	padding: 2em;
+	line-height: 1.2em;
+}
+
+h3 {
+	font-family: "lato";
+	color: $coffee;
+	font-size: 2em;
+}
+
+h4 {
+	font-family: "museo-slab";
+	font-size: 1.5em;
+	color: $accent-teal;
+}
+
+h5 {
+	font-family: "lato";
+	font-weight: medium;
+	font-size: 1.2em;
+	color: $text-color;
+}
+
+p {
+	font-family: "lato";
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.6em;
+	color: $text-color;
+}

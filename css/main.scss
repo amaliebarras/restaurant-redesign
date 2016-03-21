@@ -2,6 +2,12 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+/*-----*\
+ Imports
+\*-----*/
+@import "variables.scss";
+@import "universal.scss";
+
 /*------------------------------*\
     Grid System
 \*------------------------------*/
@@ -119,9 +125,16 @@
         width: auto;
     }
   
-  .story {
+  .textcolumn1 {
     float: left;
-    width: 50%;
+    width: 45%;
+    margin: auto;
+  }
+
+  .textcolumn2 {
+    float: right;
+    width: 45%;
+    margin: auto;
   }
   
     .column + .column {
@@ -133,38 +146,86 @@
     Styling
 \*------------------------------*/
 
-body {
-    padding: 5px;
+
+
+.sitetitle {
+    background-color: $coffee;
+    padding: 1em;
 }
 
-.column {
-    background: #eee;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    color: #777;
-    padding: 5px;
-    min-height: 30px;
+.hero-header-wrapper {
+  background: 
+    /* top, transparent beige, faked with gradient */ 
+    linear-gradient(
+      rgba(237, 228, 212, 0.55), 
+      rgba(237, 228, 212, 0.55)
+    ),
+    /* bottom, image */
+    url(/images/Beans.png);
+}
+
+.navtiles {
+    margin: auto;
+}
+
+.nav-tile {
+    padding: 1.5em .5em;
+}
+
+.anchorlinks {
     text-align: center;
+    margin-bottom: 2em;
+    a {
+        color: $coffee;
+    }
 }
 
-.row {
-    margin-bottom: 10px;
+.location, 
+.coffee, 
+.story, 
+.partners {
+    padding: 10px;
 }
 
-.row:last-child {
-    margin-bottom: 0;
+.location {
+    margin-top: 1em;
+    background-color: rgba(237, 228, 212,0.55);
 }
 
-.column .column {
-    color: #eee;
-    background: #333;
-    border-color: #000;
+.textcolumn2 .column .column-6 {
+    clear: both;
 }
 
-.p {
-  font-size: 14px;
-  text-align: center;
-  padding-top: 100px;
+.coffee {
+    margin-top: 1em;
+    background-color: rgba(31, 105, 118,0.20);
+}
+
+.story {
+    margin-top: 1em;
+    padding-bottom: 4em;
+    background: 
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(43, 40, 35, 0.66), 
+      rgba(43, 40, 35, 0.66)
+    ),
+    /* bottom, image */
+    url(/images/landscape.png);
+}
+
+.story h3 {
+    color: $light-neutral;
+    }
+
+.lighttext p {
+    color: $light-neutral;
+}
+
+.partnertile {
+    width: 40%;
+    float: left;
+    margin: 1em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -172,7 +233,7 @@ body {
         margin-bottom: 0;
     }
     .column {
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
     .row:last-child .column:last-child {
         margin-bottom: 0;
