@@ -42,18 +42,18 @@ li {
 }
 
 a {
-	text-decoration: none;
 	color: $accent-teal;
 	font-size: 1em;
 	font-family: "lato";
+	line-height: 1.6em;
 }
 
-a:active {
+.currentlink {
 	text-decoration: underline;
 }
 
 h2 {
-	font-family: "museo slab";
+	font-family: "museo-slab";
 	font-size: 1.7em;
 	color: $accent-teal;
 	text-align: center;
@@ -71,6 +71,7 @@ h4 {
 	font-family: "museo-slab";
 	font-size: 1.5em;
 	color: $accent-teal;
+	line-height: 1.6em;
 }
 
 h5 {

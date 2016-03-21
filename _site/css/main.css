@@ -37,16 +37,16 @@ li {
   background-color: #ede4d4; }
 
 a {
-  text-decoration: none;
   color: #1f6976;
   font-size: 1em;
-  font-family: "lato"; }
+  font-family: "lato";
+  line-height: 1.6em; }
 
-a:active {
+.currentlink {
   text-decoration: underline; }
 
 h2 {
-  font-family: "museo slab";
+  font-family: "museo-slab";
   font-size: 1.7em;
   color: #1f6976;
   text-align: center;
@@ -61,7 +61,8 @@ h3 {
 h4 {
   font-family: "museo-slab";
   font-size: 1.5em;
-  color: #1f6976; }
+  color: #1f6976;
+  line-height: 1.6em; }
 
 h5 {
   font-family: "lato";
@@ -197,6 +198,9 @@ p {
 .navtiles {
   margin: auto; }
 
+.navtiles a {
+  text-decoration: none; }
+
 .nav-tile {
   padding: 1.5em .5em; }
 
@@ -204,13 +208,14 @@ p {
   text-align: center;
   margin-bottom: 2em; }
   .anchorlinks a {
-    color: #55464b; }
+    color: #55464b;
+    text-decoration: none; }
 
 .location,
 .coffee,
 .story,
 .partners {
-  padding: 10px 10px 60px 10px; }
+  padding: 0px 20px 60px 20px; }
 
 .location {
   margin-top: 1em;

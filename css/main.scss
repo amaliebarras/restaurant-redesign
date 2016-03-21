@@ -168,6 +168,10 @@
     margin: auto;
 }
 
+.navtiles a {
+    text-decoration: none;
+}
+
 .nav-tile {
     padding: 1.5em .5em;
 }
@@ -177,6 +181,7 @@
     margin-bottom: 2em;
     a {
         color: $coffee;
+        text-decoration: none;
     }
 }
 
@@ -184,7 +189,7 @@
 .coffee, 
 .story,
 .partners {
-    padding: 10px 10px 60px 10px;
+    padding: 0px 20px 60px 20px;
 }
 
 .location {
