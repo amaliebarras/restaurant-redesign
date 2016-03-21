@@ -124,29 +124,29 @@
         float: none;
         width: auto;
     }
-  
-  .textcolumn1 {
-    float: left;
-    width: 45%;
-    margin: auto;
-  }
+}
 
-  .textcolumn2 {
-    float: right;
-    width: 45%;
-    margin: auto;
-  }
-  
-    .column + .column {
-        margin-left: 0;
+@media only screen and (min-width: 769px) {
+    .column-1, 
+    .column-2, 
+    .column-3,
+    .column-4, 
+    .column-5, 
+    .column-6, 
+    .column-7, 
+    .column-8, 
+    .column-9, 
+    .column-10, 
+    .column-11, 
+    .column-12 {
+        float: none;
+        width: auto;
     }
 }
 
 /*------------------------------*\
     Styling
 \*------------------------------*/
-
-
 
 .sitetitle {
     background-color: $coffee;
@@ -182,9 +182,9 @@
 
 .location, 
 .coffee, 
-.story, 
+.story,
 .partners {
-    padding: 10px;
+    padding: 10px 10px 60px 10px;
 }
 
 .location {
@@ -203,7 +203,6 @@
 
 .story {
     margin-top: 1em;
-    padding-bottom: 4em;
     background: 
     /* top, transparent black, faked with gradient */ 
     linear-gradient(
@@ -222,20 +221,75 @@
     color: $light-neutral;
 }
 
+.breakpoint1col1 {
+        float: left;
+        width: 100%;
+        margin: auto;
+      }
+
+      .breakpoint1col2 {
+        float: right;
+        width: 100%;
+        margin: auto;
+      }
+
 .partnertile {
     width: 40%;
     float: left;
-    margin: 1em;
+    margin: auto;
 }
 
-@media only screen and (max-width: 768px) {
-    .row {
-        margin-bottom: 0;
+@media only screen and (min-width: 480px) {
+    
+
+    h2 {
+        font-size: 2.5em;
+        padding: 30px;
     }
-    .column {
-        margin-bottom: 0px;
+
+     .breakpoint1col1 {
+        float: left;
+        width: 47%;
+        margin: auto;
+      }
+
+      .breakpoint1col2 {
+        float: right;
+        width: 47%;
+        margin: auto;
+      }
+
+      .partnertile {
+        width: 23%;
+        margin: auto;
     }
-    .row:last-child .column:last-child {
-        margin-bottom: 0;
+  
+    .column + .column {
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    h2 {
+        font-size: 3em;
+        padding: 30px;
+    }
+
+    .breakpoint2col1 {
+    float: left;
+    width: 47%;
+    margin: auto;
+    }
+
+    .breakpoint2col2 {
+    float: right;
+    width: 47%;
+    margin: auto;
+    }
+
+    .partnertile {
+    width: 19%;
+    margin: auto;
     }
 }
