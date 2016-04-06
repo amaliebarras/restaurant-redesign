@@ -21,18 +21,17 @@
 
 h1 {
 	margin: 0;
-	font-family: "museo-slab";
-	font-size: 2.75em;
+	font-family: "Abril Text";
+	font-size: 3.25em;
 	text-align: center;
 	color: $light-neutral;
-	background-color: $coffee;
 }
 
 ul {
 	clear: both;
 	text-align: center;
 	list-style-type: none;
-	margin: .5em auto 0 -2em;
+	margin: 0 auto 0 -2em;
 }
 
 li {
@@ -49,22 +48,25 @@ a {
 
 
 h2 {
-	font-family: "museo-slab";
-	font-size: 1.7em;
-	color: $accent-teal;
+	font-family: "lato";
+	font-size: 1.75em;
+	font-weight: normal;
+	color: $light-neutral;
 	text-align: center;
-	padding: 2em;
-	line-height: 1.2em;
+	padding: 1em 3em;
+	line-height: 1.25em;
+	margin: 2em 0em 1em 0em;
 }
 
 h3 {
 	font-family: "lato";
 	color: $coffee;
 	font-size: 2em;
+	margin-bottom: 0em;
 }
 
 h4 {
-	font-family: "museo-slab";
+	font-family: "lato";
 	font-size: 1.5em;
 	color: $accent-teal;
 	line-height: 1.6em;
@@ -83,4 +85,9 @@ p {
 	font-size: 1em;
 	line-height: 1.6em;
 	color: $text-color;
+}
+
+img.partnertile { 
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
 }

@@ -19,17 +19,16 @@
 
 h1 {
   margin: 0;
-  font-family: "museo-slab";
-  font-size: 2.75em;
+  font-family: "Abril Text";
+  font-size: 3.25em;
   text-align: center;
-  color: #ede4d4;
-  background-color: #55464b; }
+  color: #ede4d4; }
 
 ul {
   clear: both;
   text-align: center;
   list-style-type: none;
-  margin: .5em auto 0 -2em; }
+  margin: 0 auto 0 -2em; }
 
 li {
   display: inline;
@@ -42,20 +41,23 @@ a {
   line-height: 1.6em; }
 
 h2 {
-  font-family: "museo-slab";
-  font-size: 1.7em;
-  color: #1f6976;
+  font-family: "lato";
+  font-size: 1.75em;
+  font-weight: normal;
+  color: #ede4d4;
   text-align: center;
-  padding: 2em;
-  line-height: 1.2em; }
+  padding: 1em 3em;
+  line-height: 1.25em;
+  margin: 2em 0em 1em 0em; }
 
 h3 {
   font-family: "lato";
   color: #55464b;
-  font-size: 2em; }
+  font-size: 2em;
+  margin-bottom: 0em; }
 
 h4 {
-  font-family: "museo-slab";
+  font-family: "lato";
   font-size: 1.5em;
   color: #1f6976;
   line-height: 1.6em; }
@@ -72,6 +74,10 @@ p {
   font-size: 1em;
   line-height: 1.6em;
   color: #404742; }
+
+img.partnertile {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 /*------------------------------*\
     Grid System
@@ -185,15 +191,21 @@ p {
     Styling
 \*------------------------------*/
 .sitetitle {
-  background-color: #55464b;
-  padding: 1em; }
+  padding: 1em;
+  height: 6em;
+  background-color: #55464b; }
+
+.site-header {
+  z-index: 1; }
 
 .hero-header-wrapper {
-  background: linear-gradient(rgba(237, 228, 212, 0.55), rgba(237, 228, 212, 0.55)), url(/images/Beans.png);
-  background-size: 100%; }
+  z-index: -1;
+  margin-top: -2em;
+  background: linear-gradient(rgba(49, 40, 44, 0.5), rgba(49, 40, 44, 0.5)), url(/images/Beans.png);
+  background-size: cover; }
 
 .navtiles {
-  margin: auto; }
+  margin: -3px; }
 
 .navtiles a {
   text-decoration: none; }
@@ -201,23 +213,31 @@ p {
 .navtiles a:active {
   background-color: rgba(237, 228, 212, 0.55); }
 
-.navtiles a:hover {
-  text-decoration: underline; }
-
 .nav-tile {
+  color: #1f6976;
   padding: .5em .5em; }
+  .nav-tile:hover {
+    text-decoration: underline;
+    background-color: #f1d39b; }
 
 .anchorlinks {
   text-align: center;
-  margin-bottom: 2em; }
+  margin-bottom: 0em; }
   .anchorlinks a {
-    color: #55464b; }
+    color: #ede4d4;
+    padding: 0.25em; }
+  .anchorlinks h2 {
+    margin: 0 auto;
+    padding: 0; }
 
 .location,
 .coffee,
 .story,
 .partners {
-  padding: 0px 20px 60px 20px; }
+  padding: 0px 2em 5em 2em; }
+
+.location h4, h5 {
+  margin-bottom: 1em; }
 
 .textcolumn2 .column .column-6 {
   clear: both; }
@@ -226,7 +246,8 @@ p {
   background-color: rgba(31, 105, 118, 0.2); }
 
 .story {
-  background: linear-gradient(rgba(43, 40, 35, 0.66), rgba(43, 40, 35, 0.66)), url(/images/landscape.png); }
+  background: linear-gradient(rgba(43, 40, 35, 0.66), rgba(43, 40, 35, 0.66)), url(/images/landscape.png);
+  background-size: 100% 100%; }
 
 .story h3 {
   color: #ede4d4; }
@@ -258,19 +279,35 @@ p {
   margin: auto; }
 
 .partnertile {
-  width: 40%;
+  width: 19%;
   float: left;
-  margin: auto; }
+  margin: 1em 1em 0em 0em; }
 
 .menu {
-  padding: 0px 20px 60px 20px;
-  background: linear-gradient(rgba(43, 40, 35, 0.66), rgba(43, 40, 35, 0.66)), url(/images/chalkboard.jpg);
-  background-size: 100% 100%; }
+  padding: 0px 5em 5em 5em;
+  margin-top: -2em;
+  background: linear-gradient(#2b2823, #2b2823), url();
+  background-size: 100%; }
+  .menu h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-align: left;
+    padding: 0;
+    font-family: 'Lato'; }
+  .menu h4 {
+    font-family: 'Abril Text';
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin: 0.5em auto; }
+  .menu h5 {
+    text-decoration: underline; }
 
 @media only screen and (min-width: 480px) {
-  h2 {
-    font-size: 2.5em;
-    padding: 30px; }
+  .location,
+  .coffee,
+  .story,
+  .partners {
+    padding: 0px 5em 5em 5em; }
 
   .breakpoint1col1 {
     float: left;
@@ -285,9 +322,11 @@ p {
   .column + .column {
     margin-left: 0; } }
 @media only screen and (min-width: 769px) {
-  h2 {
-    font-size: 3em;
-    padding: 30px; }
+  .location,
+  .coffee,
+  .story,
+  .partners {
+    padding: 0em 5em 0em 5em; }
 
   .breakpoint2col1 {
     float: left;
@@ -300,6 +339,10 @@ p {
     margin: auto;
     padding-left: 2em; }
 
+  .menu h2 {
+    text-align: center; }
+
   .partnertile {
-    width: 19%;
-    margin: auto; } }
+    width: 22%;
+    float: left;
+    margin: 1em 1em 0em 0em; } }
