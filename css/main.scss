@@ -229,6 +229,23 @@
     background-color: rgba(31, 105, 118,0.20);
 }
 
+.buybutton {
+    background-color: $light-neutral;
+    h4 {
+        font-family: 'Lato';
+        font-size: 1.5em;
+        color: $accent-teal;
+        margin: 0;
+    }
+    padding: 0.5em 1em;
+    text-decoration: none;
+    width: 50%;
+    border: solid 4px $accent-teal;
+    &:hover {
+        background-color: $bright-neutral;
+    }
+}
+
 .story {
     background: 
     /* top, transparent black, faked with gradient */ 
@@ -285,7 +302,7 @@
 }
 
 .menu {
-    padding: 0px 5em 5em 5em;
+    padding: 0px 2em 5em 2em;
     margin-top: -2em;
     background: 
     /* top, transparent black, faked with gradient */ 
