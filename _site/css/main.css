@@ -217,6 +217,13 @@ img.partnertile {
   margin-top: -2em;
   background: linear-gradient(rgba(49, 40, 44, 0.5), rgba(49, 40, 44, 0.5)), url(/images/Beans.png);
   background-size: cover; }
+  .hero-header-wrapper h2 {
+    max-width: 600px;
+    text-align: center;
+    margin: 4em auto 0em auto; }
+
+.anchorlinks {
+  display: none; }
 
 .navtiles {
   margin: -3px; }
