@@ -7,11 +7,11 @@
 	<div class = "row">
 	    <div class = "navtiles column column-12">
 	      <ul>
-	        	<a href = "index.html">
-	        		<li class = "currentlink nav-tile">about</li>
+	        	<a href = "{{ "index.html" | prepend: site.baseurl }}">
+	        		<li class = "currentlink nav-tile">ABOUT</li>
 	        	</a>
-	        	<a href = "/menu.html">
-	        		<li class = "nav-tile">menu</li>
+	        	<a href = "{{ "/menu.html" | prepend: site.baseurl }}">
+	        		<li class = "nav-tile">MENU</li>
 	        	</a>
 	        </ul>
 	    </div>
