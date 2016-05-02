@@ -215,6 +215,7 @@
 .story,
 .partners{
     padding: 0px 2em 5em 2em;
+
 }
 
 .location h4, h5 {
@@ -229,22 +230,6 @@
     background-color: rgba(31, 105, 118,0.20);
 }
 
-.buybutton {
-    background-color: $light-neutral;
-    h4 {
-        font-family: 'Lato';
-        font-size: 1.5em;
-        color: $accent-teal;
-        margin: 0;
-    }
-    padding: 0.5em 1em;
-    text-decoration: none;
-    width: 50%;
-    border: solid 4px $accent-teal;
-    &:hover {
-        background-color: $bright-neutral;
-    }
-}
 
 .story {
     background: 
@@ -332,13 +317,22 @@
     }
 }
 
+footer {
+    text-align: center;
+    padding: 3em;
+}
+
 @media only screen and (min-width: 480px) {
     
     .location, 
     .coffee, 
     .story,
-    .partners{
+    .partners, {
     padding: 0px 5em 5em 5em;
+    }
+
+    .menu {
+        padding: 0 5em 2em 5em;
     }
 
      .breakpoint1col1 {
@@ -352,13 +346,10 @@
         width: 47%;
         padding-left: 2em;
       }
-  
-
 
     .column + .column {
         margin-left: 0;
     }
-
 }
 
 @media only screen and (min-width: 769px) {
@@ -366,8 +357,8 @@
     .location, 
     .coffee, 
     .story,
-    .partners, {
-    padding: 0em 5em 0em 5em;
+    .partners {
+    padding: 0em 5em 5em 5em;
     }
 
 
@@ -384,8 +375,15 @@
     padding-left: 2em;
     }
 
-    .menu h2 {
-    text-align: center;
+    .menu {
+        h2 {
+            text-align: center;}
+        .snacks {
+            padding-bottom: 1em;
+        }
+    }
+        .coffee {
+        padding-top: 2em;
     }
 
     .partnertile {

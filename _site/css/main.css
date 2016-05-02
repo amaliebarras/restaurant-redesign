@@ -52,7 +52,7 @@ h2 {
 
 h3 {
   font-family: "lato";
-  color: #55464b;
+  color: #392C2B;
   font-size: 2em;
   margin-bottom: 0em; }
 
@@ -78,6 +78,20 @@ p {
 img.partnertile {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
+
+.buybutton h6 {
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.6em;
+  clear: left;
+  width: 20%;
+  padding: 0.5em 1em;
+  border: solid 4px #1f6976;
+  background-color: #ede4d4; }
+  .buybutton h6 a {
+    text-decoration: none; }
+  .buybutton h6:hover {
+    background-color: #f1d39b; }
 
 /*------------------------------*\
     Grid System
@@ -193,16 +207,23 @@ img.partnertile {
 .sitetitle {
   padding: 1em;
   height: 6em;
-  background-color: #55464b; }
+  background-color: #392C2B; }
 
 .site-header {
-  z-index: 1; }
+  z-index: 0; }
+
+  .anchorlinks {
+    display: none;
+  }
+
 
 .hero-header-wrapper {
   z-index: -1;
   margin-top: -2em;
-  background: linear-gradient(rgba(49, 40, 44, 0.5), rgba(49, 40, 44, 0.5)), url(/images/Beans.png);
-  background-size: cover; }
+  background: linear-gradient(rgba(49, 40, 44, 0.7), rgba(49, 40, 44, 0.7)), url(/images/Beans.png);
+  background-size: cover; 
+  background-attachment: fixed;
+}
 
 .navtiles {
   margin: -3px; }
@@ -244,20 +265,6 @@ img.partnertile {
 
 .coffee {
   background-color: rgba(31, 105, 118, 0.2); }
-
-.buybutton {
-  background-color: #ede4d4;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  width: 50%;
-  border: solid 4px #1f6976; }
-  .buybutton h4 {
-    font-family: 'Lato';
-    font-size: 1.5em;
-    color: #1f6976;
-    margin: 0; }
-  .buybutton:hover {
-    background-color: #f1d39b; }
 
 .story {
   background: linear-gradient(rgba(43, 40, 35, 0.66), rgba(43, 40, 35, 0.66)), url(/images/landscape.png);
@@ -316,12 +323,19 @@ img.partnertile {
   .menu h5 {
     text-decoration: underline; }
 
+footer {
+  text-align: center;
+  padding: 3em; }
+
 @media only screen and (min-width: 480px) {
   .location,
   .coffee,
   .story,
   .partners {
     padding: 0px 5em 5em 5em; }
+
+  .menu {
+    padding: 0 5em 2em 5em; }
 
   .breakpoint1col1 {
     float: left;
@@ -340,7 +354,7 @@ img.partnertile {
   .coffee,
   .story,
   .partners {
-    padding: 0em 5em 0em 5em; }
+    padding: 0em 5em 5em 5em; }
 
   .breakpoint2col1 {
     float: left;
@@ -355,6 +369,11 @@ img.partnertile {
 
   .menu h2 {
     text-align: center; }
+  .menu .snacks {
+    padding-bottom: 1em; }
+
+  .coffee {
+    padding-top: 2em; }
 
   .partnertile {
     width: 22%;

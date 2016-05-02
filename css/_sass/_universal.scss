@@ -91,3 +91,18 @@ img.partnertile {
 -webkit-filter: grayscale(100%);
 filter: grayscale(100%);
 }
+
+.buybutton h6 {
+	font-size: 1em;
+	text-align: center;
+	a {text-decoration: none;}
+	line-height: 1.6em;
+	clear: left;
+	width: 20%;
+	padding: 0.5em 1em;
+	border: solid 4px $accent-teal;
+	background-color: $light-neutral;
+	&:hover {
+		background-color: $bright-neutral;
+	}
+}
