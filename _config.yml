@@ -1,7 +1,5 @@
 title: "Coffee in Austin, TX"
 baseurl: "/restaurant-redesign/" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown

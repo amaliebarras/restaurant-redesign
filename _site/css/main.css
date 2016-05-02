@@ -215,7 +215,7 @@ img.partnertile {
 .hero-header-wrapper {
   z-index: -1;
   margin-top: -2em;
-  background: linear-gradient(rgba(49, 40, 44, 0.5), rgba(49, 40, 44, 0.5)), url(/images/Beans.png);
+  background: linear-gradient(rgba(49, 40, 44, 0.5), rgba(49, 40, 44, 0.5)), url(../images/Beans.png);
   background-size: cover; }
   .hero-header-wrapper h2 {
     max-width: 600px;
@@ -267,7 +267,7 @@ img.partnertile {
   background-color: rgba(31, 105, 118, 0.2); }
 
 .story {
-  background: linear-gradient(rgba(43, 40, 35, 0.66), rgba(43, 40, 35, 0.66)), url(/images/landscape.png);
+  background: linear-gradient(rgba(43, 40, 35, 0.66), rgba(43, 40, 35, 0.66)), url(../images/landscape.png);
   background-size: 100% 100%; }
 
 .story h3 {
