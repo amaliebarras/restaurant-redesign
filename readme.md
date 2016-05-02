@@ -38,26 +38,11 @@ Dominican Joe Coffee
 
 ![Dojo Wordlist] <img src="https://github.com/amaliebarras/restaurant-redesign/blob/master/images/dojowordlist.png?raw=true" data-canonical-src="https://github.com/amaliebarras/restaurant-redesign/blob/master/images/dojowordlist.png?raw=true" width="500" />
 
-##Class Exercise
+##Style Tiles
 
-###purpose of websites
+##Typography
 
-####spotify: 
--brand: to gain users w/ subscriptions / distribute advertisements
--users: to listen to music on demand
+##Sketches
 
-####evernote: 
--brand: to sell subscriptions to users
--users: to document and organize life on the cloud
+##Mockups
 
-####calendly: 
--brand: to get people to sign up for free service, sell subscriptions
--users: to coordinate schedules in a system
-
-####pocket: 
--brand: to get qualified eyes on brands' sponsored links, sell sponsored space
--user: to have a grid-style bookmark app & a curation of relevant content
-
-####medium: 
--brand: to get people to sign up for free service
--user: to have a minimalist but socially networked blogging platform
