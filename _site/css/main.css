@@ -210,20 +210,13 @@ img.partnertile {
   background-color: #392C2B; }
 
 .site-header {
-  z-index: 0; }
-
-  .anchorlinks {
-    display: none;
-  }
-
+  z-index: 1; }
 
 .hero-header-wrapper {
   z-index: -1;
   margin-top: -2em;
-  background: linear-gradient(rgba(49, 40, 44, 0.7), rgba(49, 40, 44, 0.7)), url(/images/Beans.png);
-  background-size: cover; 
-  background-attachment: fixed;
-}
+  background: linear-gradient(rgba(49, 40, 44, 0.5), rgba(49, 40, 44, 0.5)), url(/images/Beans.png);
+  background-size: cover; }
 
 .navtiles {
   margin: -3px; }
