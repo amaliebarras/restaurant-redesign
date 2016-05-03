@@ -172,6 +172,7 @@
     /* bottom, image */
     url(../images/Beans.png);
       background-size: cover;
+      background-attachment: fixed;
       h2 {
         max-width: 600px;
         text-align: center;
@@ -250,6 +251,7 @@
     /* bottom, image */
     url(../images/landscape.png);
     background-size: 100% 100%;
+    background-attachment: fixed;
 
 }
 

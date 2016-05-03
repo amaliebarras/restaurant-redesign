@@ -216,7 +216,8 @@ img.partnertile {
   z-index: -1;
   margin-top: -2em;
   background: linear-gradient(rgba(49, 40, 44, 0.5), rgba(49, 40, 44, 0.5)), url(../images/Beans.png);
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .hero-header-wrapper h2 {
     max-width: 600px;
     text-align: center;
@@ -268,7 +269,8 @@ img.partnertile {
 
 .story {
   background: linear-gradient(rgba(43, 40, 35, 0.66), rgba(43, 40, 35, 0.66)), url(../images/landscape.png);
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  background-attachment: fixed; }
 
 .story h3 {
   color: #ede4d4; }
