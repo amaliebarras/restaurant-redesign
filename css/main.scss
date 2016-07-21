@@ -149,20 +149,65 @@
     Styling
 \*------------------------------*/
 
-.sitetitle {
-    padding: 1em;
-    height: 6em;
-    background-color: $coffee;
-
+.site-header {
+    display: block;
 }
 
-.site-header {
-    z-index: 1;
+.sitetitle {
+    display: block;
+    box-sizing: border-box;
+    background: 
+    /* top, transparent beige, faked with gradient */ 
+    linear-gradient(
+      rgba(32, 58, 32, 0.7), 
+      rgba(32, 58, 32, 0.7)
+    ),
+    /* bottom, image */
+    url(../images/bitmap.png);
+      background-size: cover;
+      div {
+        margin: 1em 0;
+        box-sizing: border-box;
+        float: left;
+        display: inline;
+      }
+    .logo {
+    margin-left: 5px;
+    height: 5em;
+    width: 5em;
+    background: 
+    /* top, transparent beige, faked with gradient */ 
+    /* bottom, image */
+    url(../images/logo.png);
+      background-size: cover;
+          div {
+            float: left;
+            display: inline;
+          }
+    }
+    .title {
+    margin-top: 3em;
+    padding-left: 1em;
+        h1 {
+            font-size: 2em;
+        }
+    }
+    .social-links {
+        margin-top: 3em;
+        float: right;
+        margin-right: 5px;
+        a {
+            color: $light-neutral;
+            font-size: 1.5em;
+            padding: 5px;
+            &:hover {
+            color: $bright-neutral;
+            }
+        }
+    }
 }
 
 .hero-header-wrapper {
-    z-index: -1;
-    margin-top: -2em;
   background: 
     /* top, transparent beige, faked with gradient */ 
     linear-gradient(
@@ -172,51 +217,28 @@
     /* bottom, image */
     url(../images/Beans.png);
       background-size: cover;
-      background-attachment: fixed;
       h2 {
-        max-width: 600px;
         text-align: center;
         margin: 4em auto 0em auto;
       }
 }
 
-.anchorlinks {
-    display: none;
-}
-
 .navtiles {
-    margin: -3px;
+    text-align: center;
+    margin: 1em auto;
 }
 
 .navtiles a {
-    text-decoration: none;}
-
-.navtiles a:active {
-    background-color: rgba(237, 228, 212, 0.55);
-}
-
-
-
-.nav-tile {
-    color: $accent-teal;
-    padding: .5em .5em;
+    box-sizing: border-box;
+    color: $coffee;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.25em 0.5em;
+    margin: 0 0.5em;
+    border: solid 4px $coffee;
     &:hover {
     text-decoration: underline;
     background-color: $bright-neutral;
-    }
-}
-
-.anchorlinks {
-    text-align: center;
-    margin-bottom: 0em;
-        a {
-        color: $light-neutral;
-        padding: 0.25em;
-    }
-
-    h2 {
-        margin: 0 auto;
-        padding: 0;
     }
 }
 
@@ -237,7 +259,7 @@
 }
 
 .coffee {
-    background-color: rgba(31, 105, 118,0.20);
+    background-color: rgba(31, 105, 118, 0.20);
 }
 
 
@@ -299,7 +321,6 @@
 
 .menu {
     padding: 0px 2em 5em 2em;
-    margin-top: -2em;
     background: 
     /* top, transparent black, faked with gradient */ 
     linear-gradient(
@@ -331,6 +352,8 @@
 footer {
     text-align: center;
     padding: 3em;
+    background-color: $accent-teal;
+    h4, a {color: $light-neutral;}
 }
 
 @media only screen and (min-width: 480px) {
@@ -340,6 +363,10 @@ footer {
     .story,
     .partners, {
     padding: 0px 5em 5em 5em;
+    }
+
+    h1 {
+        font-size: 5em;
     }
 
     .menu {

@@ -1,19 +1,31 @@
 <header class="site-header">
-	<div class = "row"> 	
-	 	<div class = "sitetitle column column-12">
-	        <h1>dominican joe</h1>        	
+	<div class = "row sitetitle">
+		<div class = "column column-2">
+			<a href = "{{site.baseurl}}"><div class = "logo"> </div></a>
+		</div>
+	 	<div class = "column column-8 title">
+	        <h1>dominican joe</h1>	
+	    </div>
+	    <div class = "social-links column column-2">
+	    	<a href = "https://www.facebook.com/dojocoffee/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+	    	<a href = "https://twitter.com/dojocoffee"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 	    </div>
 	</div>
-	<div class = "row">
-	    <div class = "navtiles column column-12">
-	      <ul>
-	        	<a href = "{{ "index.html" | prepend: site.baseurl }}">
-	        		<li class = "currentlink nav-tile">about</li>
-	        	</a>
-	        	<a href = "{{ "/menu.html" | prepend: site.baseurl }}">
-	        		<li class = "nav-tile">menu</li>
-	        	</a>
-	        </ul>
-	    </div>
-	</div>
+
+	 <div class = "row">
+      <div class = "column column-12">
+        <div class = "navtiles">
+            <a class = "navtile" href = "{{ "index.html" | prepend: site.baseurl }}">
+              ABOUT
+            </a>
+            <a class = "navtile" href = "{{ "/menu.html" | prepend: site.baseurl }}">MENU
+            </a>
+            <a class = "navtile" href = "{{ "/buy.html" | prepend: site.baseurl }}">BUY
+            </a>
+            <a class = "navtile" href = "{{ "/contact.html" | prepend: site.baseurl }}">CONTACT
+            </a>
+          </div>
+      </div>
+  	</div>
 </header>
+
