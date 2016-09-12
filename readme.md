@@ -17,12 +17,8 @@ Dominican Joe Coffee
 - location is central but tucked away
 
 ####Weaknesses: 
-- honestly the coffee is not that good
 - the parking lot is super confusing
-- employees sometimes don't pay attention to the line
-- they don't like using the blender
 - the snack options are all packaged, not fresh
-- they don't serve alcohol
 
 ####Opportunities:
 - experiment with drinks of the month
