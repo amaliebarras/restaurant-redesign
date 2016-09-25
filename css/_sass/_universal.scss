@@ -24,7 +24,9 @@ h1 {
 	font-family: "Papyrus";
 	font-size: 3.25em;
 	text-align: center;
-	color: $light-neutral;
+	color: $coffee;
+   -webkit-text-stroke-width: 0.15px;
+   -webkit-text-stroke-color: $light-neutral;
 }
 
 ul {
@@ -90,6 +92,10 @@ p {
 img.partnertile { 
 -webkit-filter: grayscale(100%);
 filter: grayscale(100%);
+&:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	}
 }
 
 .buybutton h6 {
