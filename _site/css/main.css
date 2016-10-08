@@ -19,12 +19,10 @@
 
 h1 {
   margin: 0;
-  font-family: "Papyrus";
+  font-family: "Mate";
   font-size: 3.25em;
   text-align: center;
-  color: #371106;
-  -webkit-text-stroke-width: 0.15px;
-  -webkit-text-stroke-color: #fff; }
+  color: #fff; }
 
 ul {
   clear: both;
@@ -215,7 +213,7 @@ img.partnertile {
 .sitetitle {
   display: block;
   box-sizing: border-box;
-  background: linear-gradient(rgba(40, 58, 30, 0.6), rgba(40, 58, 30, 0.6)), url(../images/header.png);
+  background: linear-gradient(rgba(40, 58, 30, 0.6), rgba(40, 58, 30, 0.6));
   background-size: cover; }
   .sitetitle div {
     margin: 1em 0;
@@ -249,8 +247,7 @@ img.partnertile {
         color: #f1d39b; }
 
 .hero-header-wrapper {
-  background: linear-gradient(rgba(49, 40, 44, 0.5), rgba(49, 40, 44, 0.5)), url(../images/Beans.png);
-  background-attachment: fixed;
+  background: linear-gradient(rgba(49, 40, 44, 0.5), rgba(49, 40, 44, 0.5)), url(../images/together.png);
   background-size: cover; }
   .hero-header-wrapper h2 {
     text-align: center;
@@ -289,8 +286,7 @@ img.partnertile {
 
 .story {
   background: linear-gradient(rgba(43, 40, 35, 0.66), rgba(43, 40, 35, 0.66)), url(../images/landscape.png);
-  background-size: 100% 100%;
-  background-attachment: fixed; }
+  background-size: 100% 100%; }
 
 .story h3 {
   color: #fff; }
